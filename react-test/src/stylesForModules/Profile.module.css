@@ -1,0 +1,9 @@
+.content {
+    grid-area: c;
+    background-color: cornsilk;
+}
+
+.content div img {
+    height: 100px;
+    width: 1000px;
+}
