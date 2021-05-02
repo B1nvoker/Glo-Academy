@@ -10,11 +10,11 @@ const MyPosts = () => {
                 <textarea></textarea>
                 <button>Add post</button>
             </div>
-            <Post message='Post 1' />
-            <Post message='Post 2' />
-            <Post message='Post 3' />
-            <Post message='Post 4' />
-            <Post message='Post 5' />
+            <Post message='Post 1' likeCounts='12'/>
+            <Post message='Post 2' likeCounts='11'/>
+            <Post message='Post 3' likeCounts='30'/>
+            <Post message='Post 4' likeCounts='154'/>
+            <Post message='Post 5' likeCounts='1'/>
         </div>
     );
 }
