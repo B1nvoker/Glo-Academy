@@ -44,4 +44,13 @@ let state = {
     }
 }
 
+export let addPost = (postMessage) => {
+    let newPost = {
+        message: postMessage,
+        likes: 0,
+        imgUrl: "https://i.pinimg.com/originals/7b/e0/4f/7be04f1d514b2583dc5b99fb22005ccd.jpg"
+    };
+    state.profilePage.posts.push(newPost);
+}
+
 export default state;
