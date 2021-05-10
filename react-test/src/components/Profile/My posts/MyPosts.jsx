@@ -6,8 +6,6 @@ const MyPosts = (props) => {
 
     let postsElements = props.posts.map(p => (<Post message={p.message} likeCounts={p.likes} imgUrl={p.imgUrl}/>))
 
-
-
     return (
         <div className={myPostsStyles.postsBlock}>
             <h3>My posts</h3>

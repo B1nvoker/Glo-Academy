@@ -2,14 +2,44 @@
     grid-area: n;
     background-color: darkgray;
     padding: 20px;
-
+}
+.item{
+    font-size: larger;
 }
 
-.item a{
+.item a {
     color: white;
     text-decoration: none;
 }
 
-.item a.active{
+.item a.active {
+    color: gold;
+}
+
+.itemSettings {
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.itemSettings a {
+    color: white;
+    text-decoration: none;
+}
+
+.itemSettings a.active {
+    color: gold;
+}
+
+.itemFriends {
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+.itemFriends a {
+    color: white;
+    text-decoration: none;
+}
+
+.itemFriends a.active {
     color: gold;
 }
