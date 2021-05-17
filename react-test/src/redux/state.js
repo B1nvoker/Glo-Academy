@@ -1,3 +1,5 @@
+import {renderEntireTree} from "../render";
+
 let state = {
     profilePage: {
         posts: [
@@ -14,7 +16,8 @@ let state = {
                 imgUrl: "https://i.pinimg.com/originals/7b/e0/4f/7be04f1d514b2583dc5b99fb22005ccd.jpg"
             },
             {message: "Post 5", likes: 126, imgUrl: "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"}
-        ]
+        ],
+        newPostText: "Write your post"
     },
     dialogsPage: {
         dialogs: [
@@ -44,13 +47,21 @@ let state = {
     }
 }
 
-export let addPost = (postMessage) => {
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    renderEntireTree(state);
+
+}
+
+export let addPost = () => {
     let newPost = {
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likes: 0,
         imgUrl: "https://i.pinimg.com/originals/7b/e0/4f/7be04f1d514b2583dc5b99fb22005ccd.jpg"
     };
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = "";
+    renderEntireTree(state);
 }
 
 export default state;
