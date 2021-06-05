@@ -87,7 +87,7 @@ let store = {
                 this._state.profilePage.newPostText = action.newText;
                 this._callSubscribe(this._state);
             }
-
+            // eslint-disable-next-line no-fallthrough
             case ADD_MESSAGE : {
                 let newMessage = {
                     message: this._state.dialogsPage.newMessageText

@@ -4,6 +4,7 @@ import PostStyles from './Post.module.css'
 const Post = (props) => {
     return (
         <div className={PostStyles.post}>
+            hgioyuio
             <img src={props.imgUrl}/>
             {props.message}
             <div>
